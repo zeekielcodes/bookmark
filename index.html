@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>The Face | Bookmark landing page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <img src="./images/logo-bookmark.svg" alt="" />
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+          <li class="login"><a href="#">Login</a></li>
+        </ul>
+      </nav>
+      <div class="banner">
+        <div class="hero">
+          <h1>A Simple Bookmark Manager</h1>
+
+          <p>
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+
+          <a href="#" class="chrome">Get it on Chrome </a>
+          <a href="#" class="firefox"> Get it on Firefox</a>
+        </div>
+        <div class="image">
+          <img src="./images/illustration-hero.svg" alt="" />
+        </div>
+      </div>
+      <div class="feature">
+        <div class="features">
+          <h2>Features</h2>
+          <p>
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+        <table>
+          <th data-feature="feature1" onclick="showSect(this.dataset.feature)">
+            <a href="#" onclick="return false">Simple Bookmarking</a>
+          </th>
+          <th data-feature="feature2" onclick="showSect(this.dataset.feature)">
+            <a href="#" onclick="return false">Speedy Searching</a>
+          </th>
+          <th data-feature="feature3" onclick="showSect(this.dataset.feature)">
+            <a href="#" onclick="return false">Easy Sharing</a>
+          </th>
+        </table>
+      </div>
+      <section id="feature1">
+        <div class="sect-image">
+          <img src="./images/illustration-features-tab-1.svg" alt="" />
+        </div>
+        <div class="sect-text">
+          <h3>Bookmark in one click</h3>
+          <p>
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favourite sites.
+          </p>
+          <a href="#">More Info</a>
+        </div>
+      </section>
+      <section id="feature2">
+        <div class="sect-image">
+          <img src="./images/illustration-features-tab-2.svg" alt="" />
+        </div>
+        <div class="sect-text">
+          <h3>Intelligent search</h3>
+          <p>
+            Our powerful search feature will help you find saved sites in no
+            time at all. No need to trawl through all of your bookmarks.
+          </p>
+          <a href="#">More Info</a>
+        </div>
+      </section>
+      <section id="feature3">
+        <div class="sect-image">
+          <img src="./images/illustration-features-tab-3.svg" alt="" />
+        </div>
+        <div class="sect-text">
+          <h3>Share your bookmarks</h3>
+          <p>
+            Easily share your bookmarks and collections with others. Create a
+            shareable link that you can send at the click of a button.
+          </p>
+          <a href="#">More Info</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+    <script>
+      // const sect = ;
+      // const heading = document.querySelectorAll("th");
+      function showSect(feature) {
+        document.querySelectorAll("section").forEach((section) => {
+          section.style.display = "none";
+        });
+        document.querySelector(`#${feature}`).style.display = "flex";
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("section").forEach((section) => {
+          section.style.display = "none";
+        });
+        document.querySelector("#feature1").style.display = "flex";
+      });
+    </script>
+  </body>
+</html>
