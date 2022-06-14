@@ -16,7 +16,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   background: white;
 }
 
@@ -403,7 +403,7 @@ a.more {
   }
 
   .hero h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .image {
