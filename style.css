@@ -88,6 +88,12 @@ nav ul li a {
   box-shadow: 5px 5px 5px hsl(229, 31%, 21%);
 }
 
+.chrome:hover {
+  background: transparent;
+  border: 2px solid hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+}
+
 .firefox {
   background: hsl(229, 8%, 60%);
   padding: 10px 20px;
@@ -95,6 +101,12 @@ nav ul li a {
   text-decoration: none;
   border-radius: 5px;
   box-shadow: 5px 5px 5px black;
+}
+
+.firefox:hover {
+  background: transparent;
+  color: hsl(229, 8%, 60%);
+  border: 2px solid hsl(229, 8%, 60%);
 }
 
 .image {
@@ -112,7 +124,8 @@ nav ul li a {
   margin: 20px 0;
 }
 
-.features h2 {
+.features h2,
+.features h4 {
   margin-bottom: 25px;
   font-size: 25px;
   color: hsl(229, 31%, 21%);
@@ -133,7 +146,7 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 80px;
+  padding: 40px 80px;
 }
 
 th {
@@ -143,6 +156,10 @@ th {
   font-weight: 400;
   font-size: 20px;
 }
+
+/* th:active {
+  border-bottom: 5px solid hsl(0, 94%, 66%);
+} */
 
 th a {
   color: hsl(229, 8%, 60%);
@@ -184,10 +201,342 @@ section {
   margin: 30px 0;
 }
 
-.sect-text a {
+.sect-text a,
+.more {
   color: white;
   background: hsl(231, 69%, 60%);
   border-radius: 5px;
   text-decoration: none;
   padding: 10px 20px;
+}
+
+.add-to {
+  display: flex;
+  justify-content: ;
+}
+
+.add-to div {
+  padding: 30px;
+  box-shadow: 5px 5px 7px #ccc;
+  text-align: center;
+  margin: 20px;
+  height: 320px;
+}
+
+.add-to div h4 {
+  margin: 20px 0;
+  font-size: 20px;
+  color: hsl(229, 31%, 21%);
+}
+
+.add-to div p {
+  color: hsl(229, 8%, 60%);
+  margin: 20px 0;
+}
+
+.add-to div a {
+  text-decoration: none;
+  color: white;
+  background: hsl(231, 69%, 60%);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.add-to div a:hover {
+  background: white;
+  color: hsl(231, 69%, 60%);
+  border: 2px solid hsl(231, 69%, 60%);
+}
+
+.add-to div:nth-child(2) {
+  margin-top: 50px;
+}
+
+.add-to div:nth-child(3) {
+  margin-top: 100px;
+}
+
+hr {
+  color: hsl(229, 8%, 60%);
+  border: 1px dashed hsl(229, 8%, 60%);
+  margin: 25px 0;
+}
+
+.faq {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px 0 0 0;
+}
+
+.questions {
+  border-top: 1px solid hsl(229, 8%, 60%);
+  padding: 10px;
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.questions img {
+  width: 20px;
+  height: 15px;
+}
+
+.questions h5 {
+  font-size: 20px;
+  color: hsl(229, 31%, 21%);
+}
+
+.questions h5:hover,
+th a:hover {
+  color: hsl(0, 94%, 66%);
+}
+
+.answers p {
+  font-size: 18px;
+  display: block;
+  color: hsl(229, 8%, 60%);
+}
+
+.answers {
+  padding: 20px 0;
+  display: none;
+}
+
+a.more {
+  margin: 50px 0;
+}
+
+.up-to-date {
+  padding: 80px;
+  background: hsl(231, 69%, 60%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.up-to-date div {
+  width: 400px;
+  text-align: center;
+}
+
+.up-to-date p {
+  font-size: 20px;
+}
+
+.up-to-date h5 {
+  font-size: 32px;
+  margin: 30px 0;
+  font-weight: 700;
+}
+
+.up-to-date input {
+  width: 250px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.up-to-date button {
+  background: hsl(0, 94%, 66%);
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  font-size: 15px;
+  height: 30px;
+  border: none;
+}
+
+.up-to-date button:hover {
+  background: white;
+  color: hsl(0, 94%, 66%);
+  border: 2px solid hsl(0, 94%, 66%);
+}
+
+.nav-footer {
+  background: hsl(229, 31%, 21%);
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-footer svg {
+  margin-right: 20px;
+}
+
+.nav-footer div {
+  display: flex;
+  align-items: center;
+}
+
+.nav-footer img {
+  margin: 0 10px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-footer a {
+  text-decoration: none;
+  font-size: 18px;
+  color: hsl(229, 8%, 60%);
+  text-transform: uppercase;
+  margin: 0 30px;
+}
+
+@media (max-width: 640px) {
+  .banner,
+  .feature {
+    padding: 20px 15px;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    height: unset;
+    margin: 0 0 50px 0;
+    padding-top: 50px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  body {
+    text-align: center;
+    padding: 0;
+    font-size: 80%;
+  }
+
+  th {
+    width: 100%;
+    display: block;
+  }
+
+  .add-to {
+    display: block;
+  }
+
+  nav {
+    padding: 20px 0;
+    flex-direction: ;
+    display: block;
+    background: hsl(229, 31%, 21%);
+    width: 100%;
+  }
+
+  nav div {
+    padding: 0 20px;
+  }
+
+  nav ul {
+    display: none;
+    justify-content: ;
+    margin: unset;
+    padding: 40px;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: hsl(229, 31%, 21%);
+    width: 100%;
+    opacity: 0.9;
+    margin-top: 20px;
+    position: absolute;
+  }
+
+  nav ul li {
+    margin: 20px 0;
+    border-bottom: 0.5px solid hsl(229, 8%, 60%);
+    width: 100%;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+
+  li.login {
+    background: transparent;
+    border: 2px solid white;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .nav-footer,
+  .footer-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-footer a {
+    margin: 20px 0;
+  }
+  .nav-footer img {
+    margin: 20px;
+  }
+
+  .sect-text,
+  .sect-image {
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  .sect-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  section {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .add-to {
+    display: block;
+    position: ;
+  }
+
+  .add-to div:nth-child(2) {
+    margin-top: unset;
+  }
+
+  .add-to div:nth-child(3) {
+    margin-top: unset;
+  }
+
+  .up-to-date input,
+  .up-to-date button {
+    width: 300px;
+    height: 40px;
+    margin: 5px 0;
+  }
+
+  nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .faq {
+    width: 90%;
+  }
+
+  .faq h5 {
+    font-size: 15px;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
