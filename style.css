@@ -457,7 +457,7 @@ a.more {
   }
 
   nav ul {
-    display: flex;
+    display: none;
     justify-content: ;
     margin: unset;
     padding: 40px;
