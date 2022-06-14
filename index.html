@@ -319,22 +319,26 @@
         });
         document.querySelector("#feature1").style.display = "flex";
       });
-      const question = document.querySelector(".questions h5");
-      const answer = document.querySelectorAll(".answers");
+
       const toggle = document.querySelector(".toggle");
-      question.addEventListener("click", () => {
-        document
-          .querySelectorAll(".answers")
-          .forEach((answer) => (answer.style.display = "none"));
-      });
 
       function Toggle(faq) {
-        (toggle.style.transform = "rotate(180deg)")(
-          (document.querySelector(`#${faq}`).style.display = "block")
-        );
-        //   : (answer.style.display = "none");
-        // toggle.style.transform = "rotate(0deg)";
+        // document.querySelectorAll(".toggle").forEach((img) => {
+        //   img.style.transform = "rotate(180deg)";
+        // });
+        document.querySelector(`#${faq}`).style.display === "none"
+          ? (toggle.style.transform = "rotate(180deg)")(
+              (document.querySelector(`#${faq}`).style.display = "block")
+            )
+          : (document.querySelector(`#${faq}`).style.display = "none");
+        toggle.style.transform = "rotate(0deg)";
       }
+
+      // document.addEventListener("DOMContentLoaded", () => {
+      //   img.addEventListener("click", () => {
+      //     img.style.transform = "rotate(0deg)";
+      //   });
+      // });
     </script>
   </body>
 </html>

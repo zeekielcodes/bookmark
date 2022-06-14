@@ -28,6 +28,7 @@ nav ul li {
   font-size: 18px;
   display: inline;
   text-transform: uppercase;
+  letter-spacing: 2px;
   padding: 10px 20px;
   font-weight: 400;
 }
@@ -48,6 +49,15 @@ nav ul li a:hover {
 
 .login a {
   color: white;
+}
+
+.login:hover {
+  background: white;
+  border: 2px solid hsl(0, 94%, 66%);
+}
+
+.login:hover a {
+  color: hsl(0, 94%, 66%);
 }
 
 .banner {
@@ -299,7 +309,8 @@ th a:hover {
 }
 
 .answers p {
-  font-size: 18px;
+  font-size: 15px;
+  text-align: left;
   display: block;
   color: hsl(229, 8%, 60%);
 }
@@ -394,6 +405,10 @@ a.more {
 }
 
 @media (max-width: 640px) {
+  body {
+    box-sizing: content-box;
+  }
+
   .banner,
   .feature {
     padding: 20px 15px;
@@ -441,13 +456,8 @@ a.more {
     width: 100%;
   }
 
-  nav div {
-    padding: 0 20px;
-    width: 100%;
-  }
-
   nav ul {
-    display: none;
+    display: flex;
     justify-content: ;
     margin: unset;
     padding: 40px;
@@ -533,6 +543,8 @@ a.more {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
+    width: 100%;
   }
 
   .faq {
