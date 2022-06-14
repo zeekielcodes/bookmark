@@ -37,6 +37,10 @@ nav ul li a {
   color: hsl(229, 8%, 60%);
 }
 
+nav ul li a:hover {
+  color: hsl(0, 94%, 66%);
+}
+
 .login {
   background: hsl(0, 94%, 66%);
   border-radius: 5px;
@@ -536,7 +540,8 @@ a.more {
   }
 
   .faq h5 {
-    font-size: 15px;
+    font-size: 14px;
+    text-align: justify;
   }
 
   .hamburger {
