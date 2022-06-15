@@ -8,7 +8,7 @@ This is my solution to the [Bookmark landing page challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Check solution]()
+- Solution URL: [Check solution](https://www.frontendmentor.io/solutions/bookmark-landing-page-solution-WeSDtLsxcw)
 - Live Site URL: [Visit live site](https://thefacebookmark.vercel.app)
 
 ### Built with

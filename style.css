@@ -95,11 +95,11 @@ nav ul li a:hover {
   background: hsl(231, 69%, 60%);
   padding: 10px 20px;
   color: white;
-  text-decoration: none;
+  margin-bottom: 10px;
   border-radius: 5px;
   margin-right: 10px;
-
-  box-shadow: 5px 5px 5px hsl(229, 31%, 21%);
+  border: none;
+  box-shadow: 2px 2px 5px hsl(229, 31%, 21%);
 }
 
 .chrome:hover {
@@ -112,9 +112,10 @@ nav ul li a:hover {
   background: hsl(229, 8%, 60%);
   padding: 10px 20px;
   color: white;
-  text-decoration: none;
+  border: none;
+
   border-radius: 5px;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 2px 2px 5px black;
 }
 
 .firefox:hover {
@@ -226,7 +227,9 @@ section {
 
 .add-to {
   display: flex;
+  flex-wrap: wrap;
   justify-content: ;
+  align-items: center;
 }
 
 .add-to div {
@@ -235,6 +238,7 @@ section {
   text-align: center;
   margin: 20px;
   height: 320px;
+  width: auto;
 }
 
 .add-to div h4 {
@@ -335,7 +339,7 @@ a.more {
 }
 
 .up-to-date div {
-  width: 400px;
+  max-width: 400px;
   text-align: center;
 }
 
@@ -376,6 +380,7 @@ a.more {
   background: hsl(229, 31%, 21%);
   padding: 20px 80px;
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -404,9 +409,84 @@ a.more {
   margin: 0 30px;
 }
 
+@media (max-width: 960px) {
+  .banner,
+  .feature {
+    padding: 40px 30px;
+  }
+
+  nav {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .banner {
+    flex-wrap: wrap;
+    height: unset;
+  }
+
+  .hero {
+    padding: 50px 0;
+    text-align: center;
+  }
+  .image,
+  .hero {
+    width: 100%;
+  }
+  table {
+    width: 90%;
+  }
+
+  section {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sect-text,
+  .sect-image {
+    width: 100%;
+  }
+
+  .sect-text {
+    padding: 30px;
+  }
+  .nav-footer {
+    width: 100%;
+  }
+
+  .add-to {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .add-to div {
+    width: 280px;
+  }
+
+  nav ul li {
+    padding: 10px;
+  }
+
+  .nav-footer {
+    padding: 20px;
+  }
+
+  .nav-footer a {
+    margin: 0 10px;
+  }
+
+  .add-to div:nth-child(2) {
+    margin-top: unset;
+  }
+
+  .add-to div:nth-child(3) {
+    margin-top: unset;
+  }
+}
+
 @media (max-width: 640px) {
   body {
-    box-sizing: content-box;
+    box-sizing: border-box;
   }
 
   .banner,
@@ -436,7 +516,7 @@ a.more {
   body {
     text-align: center;
     padding: 0;
-    font-size: 80%;
+    font-size: 15px;
   }
 
   th {
@@ -448,8 +528,13 @@ a.more {
     display: block;
   }
 
+  main {
+    width: 100%;
+    overflow: hidden;
+  }
+
   nav {
-    padding: 20px 0;
+    padding: unset;
     flex-direction: ;
     display: block;
     background: hsl(229, 31%, 21%);
@@ -467,12 +552,13 @@ a.more {
     background: hsl(229, 31%, 21%);
     width: 100%;
     opacity: 0.9;
-    margin-top: 20px;
+    margin-top: 0px;
     position: absolute;
   }
 
   nav ul li {
     margin: 20px 0;
+    padding: unset;
     border-bottom: 0.5px solid hsl(229, 8%, 60%);
     width: 100%;
   }
@@ -484,6 +570,7 @@ a.more {
   li.login {
     background: transparent;
     border: 2px solid white;
+    padding: 10px;
   }
 
   section {
@@ -514,6 +601,13 @@ a.more {
     height: auto;
   }
 
+  button.firefox,
+  button.chrome {
+    width: 80%;
+    margin-bottom: 5px;
+    margin-right: unset;
+  }
+
   section {
     width: 100%;
     padding: 15px;
@@ -522,14 +616,6 @@ a.more {
   .add-to {
     display: block;
     position: ;
-  }
-
-  .add-to div:nth-child(2) {
-    margin-top: unset;
-  }
-
-  .add-to div:nth-child(3) {
-    margin-top: unset;
   }
 
   .up-to-date input,
@@ -543,8 +629,8 @@ a.more {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
-    width: 100%;
+    padding: 10px 20px;
+    width: ;
   }
 
   .faq {
